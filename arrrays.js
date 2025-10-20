@@ -18,3 +18,5 @@ console.log(arrayWithNumbers);
 
 arrayWithNumbers.push(10);
 console.log(arrayWithNumbers);
+
+console.log("Размер массива :", arrayWithNumbers.length);
