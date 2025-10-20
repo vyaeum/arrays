@@ -24,3 +24,11 @@ console.log("Размер массива :", arrayWithNumbers.length);
 let copyArrayWithNumbers = arrayWithNumbers.slice();
 console.log("Копия массива:", copyArrayWithNumbers);
 console.log("Оригинальный массив:", copyArrayWithNumbers);
+
+for (let i = 0; i < arrayWithNumbers.length; i++) {
+  if (i % 2 === 0) {
+    console.log(arrayWithNumbers[i]);
+  }
+}
+
+
