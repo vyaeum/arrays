@@ -76,12 +76,36 @@ for (let i = 0; i < phones.length; i++) {
 }
 console.log(ramCount);
 
-let totalPrice = 0
+let totalPrice = 0;
 
 for (let i = 0; i < phones.length; i++) {
   totalPrice += phones[i].price;
-  }
+}
 
-  let averagePrice = totalPrice / phones.length;
+let averagePrice = totalPrice / phones.length;
 
-  console.log("Средняя цена:", averagePrice.toFixed(0), "грн");
+console.log("Средняя цена:", averagePrice.toFixed(0), "грн");
+
+const numbers = [-1, 5, 0, 9, -10];
+
+const nonZeroNumbers = numbers.filter((num) => num !== 0);
+console.log(nonZeroNumbers);
+
+const array100 = numbers.map((num) => num / 100);
+console.log(array100);
+
+numbers.forEach((num) => {
+  console.log(num ** 3);
+});
+
+// Сделано чатом по тому что я не понимал, но позже уже понял.
+const arrayNumbers = [2, 5, 10, 3, -10];
+
+const index = arrayNumbers.findIndex((num) => num ** 2 === 100); // тут мы подносим к квадрату все числа и ищем 100, должно быть 10 * 10 = 100 и если находим 100, то вернется его индекс
+
+if (index !== -1) { // тут если индекс возвращенный не равен -1
+  arrayNumbers.splice(index, 1); // если не равен то мы его удаляем 
+  console.log(`Елемент видалено. Новий масив: ${arrayNumbers}`);
+} else {
+  console.log("Елемент, квадрат якого дорівнює 100, не знайдено");
+}
