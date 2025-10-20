@@ -31,4 +31,9 @@ for (let i = 0; i < arrayWithNumbers.length; i++) {
   }
 }
 
+let accumForCount = 1;
+for (let i = 0; i < arrayWithNumbers.length; i++) {
+  accumForCount *= arrayWithNumbers[i];
+}
 
+console.log("Добуток:", accumForCount);
